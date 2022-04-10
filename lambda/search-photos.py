@@ -36,7 +36,7 @@ def getKeywordsFromString(query):
     client = boto3.client('lex-runtime')
     response = client.post_text(botName='SearchPhotos',
                                 botAlias='beta',
-                                userId='viren',
+                                userId='xxx',
                                 inputText=query)
     logger.debug(response)
     logger.debug(type(response))
